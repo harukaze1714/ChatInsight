@@ -1,0 +1,59 @@
+/* General Page Style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+/* ユーザーリストに適用するスタイル */
+#user-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#user-list li {
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #accbf3;
+    text-align: center;
+    cursor: pointer;  /* カーソルをポインターに */
+    border-radius: 4px; /* 角を丸く */
+}
+
+/* ホバー時のスタイル */
+#user-list li:hover {
+    background-color: #ddd;
+}
+
+#month-list button {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Hover effect */
+#month-list button:hover {
+    background-color: #0056b3;
+}
+
+/* User Summary */
+#user-summary {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#user-summary h2 {
+    margin-top: 0;
+}

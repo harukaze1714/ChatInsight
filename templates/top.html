@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- Path: /templates/top.html -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/top_styles.css">
+  <title>ウェルカムページ</title>
+</head>
+
+<body>
+
+  <header>
+    <img src="logo.png" alt="アプリロゴ" id="app-logo">
+    <p id="slogan">Code Insight</p>
+  </header>
+
+  <main>
+    <section id="user-guide">
+      <h2>ユーザーガイド</h2>
+      <p>アプリの基本的な使い方と機能を紹介します。</p>
+      <img src="guide-image.png" alt="ガイドイメージ">
+    </section>
+
+    <section id="account-section">
+      <h2>アカウント作成/ログイン</h2>
+
+      <form class="form-group" id="signup-form">
+        <h3>アカウント作成</h3>
+        <input type="text" placeholder="ユーザー名" required>
+        <input type="password" placeholder="パスワード" required>
+        <button type="submit" id="signup-button">アカウント作成</button>
+      </form>
+
+      <form class="form-group" id="login-form">
+        <h3>ログイン</h3>
+        <input type="text" placeholder="ユーザー名" required>
+        <input type="password" placeholder="パスワード" required>
+        <button type="submit" id="login-button">ログイン</button>
+      </form>
+
+    </section>
+  </main>
+
+  <footer>
+    <a href="#">プライバシーポリシー</a>
+    <a href="#">利用規約</a>
+  </footer>
+
+
+
+  <script src="/static/script/top_script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+body {
+  font-family: 'Arial, sans-serif';
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  height: 100vh;
+}
+
+#chat-selection {
+  width: 200px;
+  min-width: 20%;
+  /* 追加: 画面幅の1/5を最低限として設定 */
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#chat-selection h2 {
+  margin-top: 0;
+}
+
+#chat-selection ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#chat-selection ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+#chat-selection ul li:hover {
+  background-color: #f9f9f9;
+}
+
+#chat-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10px;
+}
+
+
+#chat-selection {
+  position: relative;  /* 追加: 相対位置指定 */
+}
+
+#management-area {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* 新しいスタイリングが必要な場合、ここに追加 */
+}
+
+#manage-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#history-window {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+#chat-history {
+  flex-grow: 1;
+}
+
+#response-area {
+  margin-top: 10px;
+  background-color: #f0f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#chat-window {
+  min-height: 100px;
+  display: flex;
+  padding: 10px;
+}
+
+#chat-window textarea {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#chat-window #send-button {
+  margin-left: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ai-message {
+  background-color: #e0f0ff;
+  /* 薄いブルー */
+  padding: 8px;
+  border-radius: 5px;
+  margin: 2px 0;
+}
+
+.user-message {
+  background-color: #f7f7f7;
+  /* 限りなく白に近い灰色 */
+  padding: 8px;
+  border-radius: 5px;
+  margin: 2px 0;
+}

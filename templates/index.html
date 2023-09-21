@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/index_style.css">
+    <title>Chat Application</title>
+</head>
+
+<body>
+    <div id="container">
+        <aside id="chat-selection">
+            <h2>チャットリスト</h2>
+            <button id="add-chat-button">+</button>
+            <ul id="chat-list">
+                <li data-chat-id="1">Chat 1</li>
+                <li data-chat-id="2">Chat 2</li>
+                <li data-chat-id="3">Chat 3</li>
+            </ul>
+            <div id="management-area">  <!-- 新しいdivを追加 -->
+                <button id="manage-button">マネジメントページへ</button>
+            </div>
+        </aside>
+        
+
+        <main id="chat-container">
+            <div id="history-window">
+                <div id="chat-history">
+                    <!-- Chat history will appear here -->
+                </div>
+
+                <div id="response-area">
+                    <!-- AI responses will appear here -->
+                </div>
+            </div>
+
+            <div id="chat-window">
+                <textarea id="message-input" placeholder="メッセージを入力..."></textarea>
+                <button id="send-button">送信</button>
+            </div>
+        </main>
+    </div>
+    <script src="/static/script/index_script.js"></script>
+</body>
+</html>
